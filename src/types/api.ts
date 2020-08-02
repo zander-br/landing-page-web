@@ -27,15 +27,17 @@ export type SectionAboutProjectProps = {
   description: string
 }
 
+type TechIcon = {
+  title: string
+  icon: {
+    alternativeText: string
+    url: string
+  }
+}
+
 export type SectionTechProps = {
   title: string
-  techIcons: {
-    title: string
-    icon: {
-      alternativeText: string
-      url: string
-    }
-  }[]
+  techIcons: TechIcon[]
 }
 
 type Concept = {
