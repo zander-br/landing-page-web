@@ -72,6 +72,20 @@ const GET_LANDING_PAGE = /* GraphQL */ `
     }
   }
 
+  fragment pricingBox on LandingPage {
+    pricingBox {
+      totalPrice
+      numberInstallments
+      priceInstallment
+      priceDiscount
+      benefits
+      button {
+        label
+        url
+      }
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo
@@ -81,6 +95,7 @@ const GET_LANDING_PAGE = /* GraphQL */ `
       ...sectionConcepts
       ...sectionModule
       ...sectionAgenda
+      ...pricingBox
     }
   }
 `
