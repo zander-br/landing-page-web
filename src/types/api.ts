@@ -27,7 +27,7 @@ export type SectionAboutProjectProps = {
   description: string
 }
 
-type TechIcon = {
+export type TechIcon = {
   title: string
   icon: {
     alternativeText: string
@@ -40,7 +40,7 @@ export type SectionTechProps = {
   techIcons: TechIcon[]
 }
 
-type Concept = {
+export type Concept = {
   title: string
 }
 
@@ -49,7 +49,7 @@ export type SectionConceptsProps = {
   concepts: Concept[]
 }
 
-type Module = {
+export type Module = {
   title: string
   subtitle: string
   description: string
