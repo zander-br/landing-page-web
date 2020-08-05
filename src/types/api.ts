@@ -65,7 +65,6 @@ export type PricingBoxProps = {
   totalPrice: number
   numberInstallments: number
   priceInstallment: number
-  priceDiscount: number
   benefits: string
   button: Button
 }

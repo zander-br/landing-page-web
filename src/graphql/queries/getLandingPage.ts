@@ -77,7 +77,6 @@ const GET_LANDING_PAGE = /* GraphQL */ `
       totalPrice
       numberInstallments
       priceInstallment
-      priceDiscount
       benefits
       button {
         label
