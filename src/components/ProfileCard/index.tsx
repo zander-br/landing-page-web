@@ -30,13 +30,11 @@ const ProfileCard: React.FC<Author> = ({
   description
 }) => (
   <S.Card key={name}>
-    <S.Image>
-      <img
-        src={getImageUrl(photo.url)}
-        loading="lazy"
-        alt={photo.alternativeText}
-      />
-    </S.Image>
+    <S.Image
+      src={getImageUrl(photo.url)}
+      loading="lazy"
+      alt={photo.alternativeText}
+    />
     <S.Name>{name}</S.Name>
     <S.Role>{role}</S.Role>
     <S.SocialLinks>
