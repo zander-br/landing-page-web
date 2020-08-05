@@ -26,17 +26,15 @@ const ReviewCard: React.FC<Review> = ({ id, name, photo, text }) => {
   return (
     <S.Card>
       <S.User>
-        <S.Image>
-          <img
-            src={
-              photo
-                ? getImageUrl(photo.url)
-                : require('@images/reviews/reviewer.jpg')
-            }
-            loading="lazy"
-            alt={name}
-          />
-        </S.Image>
+        <S.Image
+          src={
+            photo
+              ? getImageUrl(photo.url)
+              : require('@images/reviews/reviewer.jpg')
+          }
+          loading="lazy"
+          alt={name}
+        />
         <S.Name>{name}</S.Name>
       </S.User>
       <S.Text>
