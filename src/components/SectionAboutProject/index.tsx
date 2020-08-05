@@ -16,13 +16,11 @@ const SectionAboutProject = ({
   <S.Wrapper>
     <Container>
       <S.Container>
-        <S.Image>
-          <img
-            src={getImageUrl(image.url)}
-            loading="lazy"
-            alt={image.alternativeText}
-          />
-        </S.Image>
+        <S.Image
+          src={getImageUrl(image.url)}
+          alt={image.alternativeText}
+          loading="lazy"
+        />
         <div>
           <Heading>{title}</Heading>
           <S.Text
